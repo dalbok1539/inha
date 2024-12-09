@@ -1,3 +1,4 @@
+// router 등록은 app.js에서 
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -21,7 +22,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
-app.use('/kakao', require('./routes/kakao'))
+app.use('/kakao', require('./routes/kakao'));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,4 +1,6 @@
+<!-- alt+shift+f 자동정렬 -->
 <!-- Button trigger modal -->
+ <!-- 1번째 데이터만 나오는 문제 -: data-bs-target에 index추가한 id명으로 유니크하게 함-->
 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#staticBackdrop{{@index}}">
     정보
 </button>
@@ -9,19 +11,19 @@
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="staticBackdropLabel">도서정보</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
                 <div class="row">
                     <div class="col-4">
-                        <img src="{{funThumbnail thumbnail}}" width="100%">
+                        <img src="{{thumbnail}}" width="100%"/>
                     </div>
                     <div class="col">
                         <h5>{{title}}</h5>
                         <hr>
                         <div>저자 : {{authors}}</div>
-                        <div>가격 : {{price}}원</div>
+                        <div>가격 : {{price}}</div>
                         <div>출판사 : {{publisher}}</div>
                         <div>ISBN : {{isbn}}</div>
                         <div>출판일 : {{datetime}}</div>

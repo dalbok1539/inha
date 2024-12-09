@@ -1,16 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Jua&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Grandiflora+One&family=Stylish&display=swap');
 * {
-	font-family: "IBM Plex Sans KR", sans-serif;
-	font-weight: 400;
-	font-style: normal;
+  font-family: "Stylish", serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
+/* 한줄이 넘어가면 ... 처리 */
 .ellipsis {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 1;
-    -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
 }
